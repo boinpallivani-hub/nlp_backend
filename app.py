@@ -4,7 +4,7 @@ import uvicorn
 import os
 
 # Replace with your own Gemini API key
-client = genai.Client(api_key=os.enbiron["GEMINI_API_KEY"])
+client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 app = FastAPI(
     title="Python Code Explainer API",
     description="Explains Python code line by line using Gemini",
